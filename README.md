@@ -41,3 +41,7 @@ nano /etc/default/cpufrequtils
 ```bash
 echo "cpufreq-set -g powersave" > ~/.zlogout && echo "cpufreq-set -g powersave" > ~/.bash_logout && echo "cpufreq-set -g schedutil" > /etc/profile.d/00agovernor.sh
 ```
+or
+```bash
+echo "echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor" > ~/.zlogout && echo "echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor" > ~/.bash_logout && echo "echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor" > /etc/profile.d/00agovernor.sh
+```
