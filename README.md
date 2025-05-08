@@ -21,6 +21,9 @@ apt install cpufrequtils
 ```bash
 cpufreq-set -g schedutil
 ```
+```bash
+nano /etc/default/cpufrequtils
+```
 - **set cpu to powersave after logout**
 ```bash
 echo "cpufreq-set -g powersave" > ~/.zlogout && echo "cpufreq-set -g powersave" > ~/.bash_logout && echo "cpufreq-set -g schedutil" > /etc/profile.d/00agovernor.sh
