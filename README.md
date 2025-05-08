@@ -12,7 +12,11 @@ watch -n 1 cat /sys/devices/system/cpu/cpu*/cpufreq/cpuinfo_cur_freq
 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
 - **set cpu governor**
-
+- 
+check available governor
+```bash
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+```
 powersave, conservative, userspace, ondemand, performance, schedutil
 
 ```bash
