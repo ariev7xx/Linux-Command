@@ -29,6 +29,10 @@ apt install cpufrequtils
 ```bash
 cpufreq-set -g schedutil
 ```
+or
+```bash
+echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+```
 change `GOVERNOR="schedutil"`
 ```bash
 nano /etc/default/cpufrequtils
