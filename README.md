@@ -17,6 +17,10 @@ check available governor
 ```bash
 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
 ```
+or
+```bash
+cpufreq-info -g
+```
 powersave, conservative, userspace, ondemand, performance, schedutil
 
 ```bash
