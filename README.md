@@ -15,9 +15,9 @@ cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
 powersave, conservative, userspace, ondemand, performance, schedutil
 
-`bash
+```bash
 apt install cpufrequtils
-`
+```
 ```bash
 cpufreq-set -g schedutil
 ```
