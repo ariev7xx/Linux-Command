@@ -1,17 +1,17 @@
 # Linux-Command
-**view cpu thermal**
+- **view cpu thermal**
 ```bash
 watch -n 1 cat /sys/class/thermal/thermal_zone*/temp
 ```
-**view cpu current freq**
+- **view cpu current freq**
 ```bash
 watch -n 1 cat /sys/devices/system/cpu/cpu*/cpufreq/cpuinfo_cur_freq
 ```
-**view cpu governor**
+- **view cpu governor**
 ```bash
 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
-**set cpu governor**
+- **set cpu governor**
 
 powersave, conservative, userspace, ondemand, performance, schedutil
 ```bash
