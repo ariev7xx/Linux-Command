@@ -21,6 +21,7 @@ apt install cpufrequtils
 ```bash
 cpufreq-set -g schedutil
 ```
+change `GOVERNOR="schedutil"`
 ```bash
 nano /etc/default/cpufrequtils
 ```
